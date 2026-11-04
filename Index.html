@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuangBelajar - Belajar Lebih Mudah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Ruang<span>Belajar.</span></div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="navbar">
+        <a href="#home">Home</a>
+        <a href="#materi">Materi</a>
+        <a href="#tugas">Tugas</a>
+        <a href="#tips">Tips Belajar</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tag">WEBSITE EDUKASI SISWA</p>
+        <h1>Belajar Lebih Mudah,<br>
+        Raih Masa Depan Cerah!</h1>
+        <p>
+            Temukan materi pelajaran, informasi tugas,
+            dan tips belajar dalam satu website.
+        </p>
+        <a href="#materi" class="btn">Mulai Belajar</a>
+    </div>
+</section>
+
+<section class="section" id="materi">
+    <h2>Materi Pelajaran</h2>
+    <p class="subtitle">Pilih materi yang ingin kamu pelajari.</p>
+
+    <input type="text" id="search"
+    placeholder="Cari materi pelajaran..."
+    oninput="cariMateri()">
+
+    <div class="cards" id="materi-list">
+        <div class="card">
+            <div class="emoji">💻</div>
+            <h3>Pemrograman Web</h3>
+            <p>Belajar HTML, CSS, dan JavaScript.</p>
+            <button onclick="lihatMateri('Pemrograman Web')">
+                Pelajari
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🗄️</div>
+            <h3>Basis Data</h3>
+            <p>Mengenal database dan SQL.</p>
+            <button onclick="lihatMateri('Basis Data')">
+                Pelajari
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📚</div>
+            <h3>Bahasa Indonesia</h3>
+            <p>Belajar teks, cerpen, dan resensi.</p>
+            <button onclick="lihatMateri('Bahasa Indonesia')">
+                Pelajari
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🌐</div>
+            <h3>Jaringan Komputer</h3>
+            <p>Mengenal jaringan dan internet.</p>
+            <button onclick="lihatMateri('Jaringan Komputer')">
+                Pelajari
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="section tugas" id="tugas">
+    <h2>Daftar Tugas Siswa</h2>
+    <p class="subtitle">Catat tugas agar tidak lupa mengerjakannya.</p>
+
+    <div class="task-box">
+        <input type="text" id="taskInput"
+        placeholder="Masukkan tugas baru...">
+        <button onclick="tambahTugas()">Tambah</button>
+        <ul id="taskList"></ul>
+    </div>
+</section>
+
+<section class="section" id="tips">
+    <h2>Tips Belajar</h2>
+    <div class="tips-grid">
+        <div class="tip">
+            <h3>⏰ Atur Waktu</h3>
+            <p>Buat jadwal belajar agar lebih teratur.</p>
+        </div>
+        <div class="tip">
+            <h3>📖 Rajin Membaca</h3>
+            <p>Baca materi setiap hari untuk menambah pengetahuan.</p>
+        </div>
+        <div class="tip">
+            <h3>🎯 Fokus</h3>
+            <p>Hindari gangguan ketika sedang belajar.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h3>RuangBelajar.</h3>
+    <p>Belajar hari ini untuk masa depan yang lebih baik.</p>
+    <p>© 2026 RuangBelajar - Project Kelompok 01</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
